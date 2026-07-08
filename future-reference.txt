@@ -1,0 +1,40 @@
+Updated 30-Day Roadmap
+Phase 1 — Foundations
+✅ Day 1: Agent Fundamentals
+✅ Day 2: Prompt Engineering
+✅ Day 3: Gemini Integration
+✅ Day 4: Manual Tool Calling
+🚧 Day 5: Gemini Function Calling
+Day 6: Structured Outputs
+Day 7: Conversation Memory
+
+Phase 2 — Agent Intelligence
+Day 8: Planning
+Day 9: Task Decomposition
+Day 10: Reflection & Self-Correction
+Day 11: Tool Registry
+Day 12: Dynamic Tool Loading
+Day 13: Agent Router
+Day 14: Error Recovery
+
+Phase 3 — RAG
+Day 15: Embeddings
+Day 16: Chunking
+Day 17: Vector Database
+Day 18: Retrieval
+Day 19: RAG Pipeline
+Day 20: Hybrid Search
+
+Phase 4 — Multi-Agent
+Day 21: Manager Agent
+Day 22: Worker Agents
+Day 23: Reviewer Agent
+Day 24: Agent Communication
+Day 25: Team Coordination
+
+Phase 5 — Production AI
+Day 26: FastAPI Integration
+Day 27: Logging & Configuration
+Day 28: Testing
+Day 29: Docker
+Day 30: Complete Enterprise Agent
