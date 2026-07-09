@@ -1,10 +1,10 @@
 Updated 30-Day Roadmap
 Phase 1 — Foundations
-✅ Day 1: Agent Fundamentals
-✅ Day 2: Prompt Engineering
-✅ Day 3: Gemini Integration
-✅ Day 4: Manual Tool Calling
-🚧 Day 5: Gemini Function Calling
+✅ Day 1 — Project Foundation
+⬜ Day 2 — Gemini Client Module
+⬜ Day 3 — Prompt Management
+⬜ Day 4 — Tool Framework
+⬜ Day 5 — Automatic Function Calling
 Day 6: Structured Outputs
 Day 7: Conversation Memory
 
