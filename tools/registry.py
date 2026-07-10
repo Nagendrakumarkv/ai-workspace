@@ -1,6 +1,7 @@
 import logging
 
 from tools.base import BaseTool
+from tools.metadata import ToolMetadata
 
 
 class ToolRegistry:
@@ -45,3 +46,13 @@ class ToolRegistry:
     def list_tools(self):
 
         return list(self._tools.keys())
+    
+    def metadata(self) -> list[ToolMetadata]:
+
+        return [
+            ToolMetadata(
+                name=tool.name,
+                description=tool.description,
+            )
+            for tool in self._tools.values()
+        ]

@@ -5,6 +5,10 @@ from config.settings import get_settings
 from llm.gemini_client import GeminiClient
 from prompts.builder import PromptBuilder
 from memory.conversation import ConversationManager
+from tools.registry import ToolRegistry
+from tools.calculator import CalculatorTool
+from tools.datetime_tool import DateTimeTool
+from tools.random_tool import RandomTool
 
 
 class Application:
@@ -13,6 +17,10 @@ class Application:
         self.logger = logging.getLogger(__name__)
         self.settings = get_settings()
         self.llm = GeminiClient(self.settings)
+        self.registry = ToolRegistry()
+        self.registry.register(CalculatorTool())
+        self.registry.register(DateTimeTool())
+        self.registry.register(RandomTool())
         self.prompt_builder = PromptBuilder()
         self.memory = ConversationManager()
 
@@ -21,6 +29,9 @@ class Application:
         
         print("=" * 60)
         print("Welcome to AI Workspace")
+        print("\nAvailable Tools")
+        for tool in self.registry.metadata():
+            print(f"- {tool.name}: {tool.description}")
         print("Type 'exit' to quit.")
         print("=" * 60)
 
