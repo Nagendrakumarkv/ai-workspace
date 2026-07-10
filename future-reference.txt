@@ -38,3 +38,262 @@ Day 27: Logging & Configuration
 Day 28: Testing
 Day 29: Docker
 Day 30: Complete Enterprise Agent
+
+-------------------------------------
+
+📅 Phase 1 — Software Foundation (Days 1–5)
+✅ Day 1 — Project Foundation
+Module 1
+Project structure
+Virtual environment
+Configuration management
+Pydantic Settings
+Module 2
+Production logging
+Module 3
+Application bootstrap
+Dependency Injection
+Module 4
+Git
+README
+Project hygiene
+Day 2 — LLM Layer
+Module 1
+Base LLM interface
+Gemini Client
+Module 2
+Prompt Management
+Module 3
+Conversation Manager
+Module 4
+Context Window
+Module 5
+Prompt Templates
+Module 6
+Unit Testing
+Day 3 — Prompt Engineering
+Module 1
+Prompt lifecycle
+Module 2
+System Prompts
+Module 3
+User Prompts
+Module 4
+Dynamic Prompt Builder
+Module 5
+Prompt Versioning
+Module 6
+Prompt Testing
+Day 4 — Tool Framework
+Module 1
+Tool architecture
+Module 2
+Base Tool Interface
+Module 3
+Tool Registry
+Module 4
+Tool Metadata
+Module 5
+Dynamic Tool Discovery
+Module 6
+Unit Tests
+Day 5 — Gemini Function Calling
+Module 1
+Function Calling theory
+Module 2
+Tool Schema
+Module 3
+Registering Tools
+Module 4
+Function Call Detection
+Module 5
+Tool Execution
+Module 6
+Multiple Tool Calls
+Module 7
+Error Recovery
+📅 Phase 2 — Agent Core (Days 6–12)
+Day 6 — Memory
+Short-term Memory
+Sliding Window
+Token Budget
+Memory Manager
+Memory Testing
+Day 7 — Long-Term Memory
+SQLite Storage
+Session Management
+User Profiles
+Memory Retrieval
+Day 8 — Planning
+Planner
+Task Breakdown
+Goal Analysis
+Execution Graph
+Day 9 — Agent Executor
+Execution Engine
+Retry Logic
+Failure Handling
+Status Tracking
+Day 10 — Reflection
+Self Reflection
+Self Correction
+Output Validation
+Retry Strategy
+Day 11 — Agent Router
+Intent Detection
+Tool Selection
+Workflow Selection
+Day 12 — Agent Orchestrator
+Planner
+Memory
+Tools
+LLM
+Unified Agent
+📅 Phase 3 — RAG (Days 13–18)
+Day 13
+Embeddings
+Day 14
+Document Chunking
+Day 15
+ChromaDB
+Day 16
+Retriever
+Day 17
+Complete RAG Pipeline
+Day 18
+Hybrid Search
+Metadata Filtering
+Ranking
+📅 Phase 4 — Multi-Agent Systems (Days 19–24)
+Day 19
+
+Manager Agent
+
+Day 20
+
+Research Agent
+
+Day 21
+
+Writer Agent
+
+Day 22
+
+Reviewer Agent
+
+Day 23
+
+Agent Communication
+
+Day 24
+
+Multi-Agent Orchestrator
+
+📅 Phase 5 — Production Engineering (Days 25–30)
+Day 25 — FastAPI
+
+Modules
+
+REST APIs
+Dependency Injection
+Request Validation
+Response Models
+Day 26 — Authentication
+
+Modules
+
+JWT
+API Keys
+Middleware
+Day 27 — Logging & Monitoring
+
+Modules
+
+Structured Logging
+Metrics
+Observability
+Performance
+Day 28 — Docker
+
+Modules
+
+Dockerfile
+Docker Compose
+Environment Variables
+Production Images
+Day 29 — Testing & CI/CD
+
+Modules
+
+Integration Tests
+Mocking Gemini
+GitHub Actions
+Coverage
+Day 30 — Enterprise AI Platform
+
+Build the complete application.
+
+Features:
+
+✅ Gemini
+✅ Prompt Management
+✅ Function Calling
+✅ Tool Registry
+✅ Memory
+✅ Planning
+✅ Agent Routing
+✅ RAG
+✅ Multi-Agent Collaboration
+✅ FastAPI
+✅ Authentication
+✅ Logging
+✅ Docker
+✅ Unit Tests
+✅ CI/CD
+✅ Production Deployment Ready
+📂 Final Project Structure
+ai-workspace/
+│
+├── app.py
+├── pyproject.toml
+├── uv.lock
+├── .env
+├── README.md
+│
+├── bootstrap/
+├── config/
+├── llm/
+├── prompts/
+├── agent/
+├── tools/
+├── memory/
+├── rag/
+├── api/
+├── auth/
+├── evaluation/
+├── storage/
+├── tests/
+├── logs/
+└── docs/
+🎯 Final Outcome
+
+By the end of this bootcamp, you will be able to:
+
+Design a production-ready AI architecture.
+Build an AI agent without relying on frameworks.
+Understand how frameworks such as LangGraph and CrewAI work internally.
+Add memory, planning, tool calling, RAG, and multi-agent collaboration to your own applications.
+Build REST APIs around your agent.
+Test, containerize, and prepare the system for deployment.
+Showcase a professional GitHub project during interviews.
+🔥 One Suggestion to Make This Even Better
+
+I recommend adding a mini capstone at the end of each phase:
+
+Phase 1 (Day 5): AI Chat Assistant with Function Calling
+Phase 2 (Day 12): Personal AI Assistant with Memory & Planning
+Phase 3 (Day 18): Document Q&A System (RAG)
+Phase 4 (Day 24): Multi-Agent Research & Report Generator
+Phase 5 (Day 30): Complete Enterprise AI Workspace
+
+These checkpoints let you see tangible progress every week while still contributing to the final production project. I think they'll make the bootcamp much more motivating and give you portfolio-worthy milestones

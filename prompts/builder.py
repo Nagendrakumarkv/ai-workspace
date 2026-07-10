@@ -1,5 +1,8 @@
 from prompts.base import Prompt
-from prompts.system import SYSTEM_PROMPT
+from prompts.templates import (
+    SYSTEM_TEMPLATE,
+    CHAT_TEMPLATE,
+)
 
 
 class PromptBuilder:
@@ -10,26 +13,17 @@ class PromptBuilder:
         history,
     ) -> Prompt:
 
-        conversation = ""
+        conversation = "\n".join(
+            f"{message.role}: {message.content}"
+            for message in history
+        )
 
-        for message in history:
-
-            conversation += (
-                f"{message.role}: "
-                f"{message.content}\n"
-            )
-
-        final_user_prompt = f"""
-Conversation History:
-
-{conversation}
-
-Current User:
-
-{user_prompt}
-"""
+        user_message = CHAT_TEMPLATE.format(
+            history=conversation,
+            user=user_prompt,
+        )
 
         return Prompt(
-            system=SYSTEM_PROMPT,
-            user=final_user_prompt,
+            system=SYSTEM_TEMPLATE,
+            user=user_message,
         )
