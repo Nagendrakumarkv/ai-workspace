@@ -9,7 +9,7 @@ from tools.registry import ToolRegistry
 from tools.calculator import CalculatorTool
 from tools.datetime_tool import DateTimeTool
 from tools.random_tool import RandomTool
-
+from agent.service import AgentService
 
 class Application:
     def __init__(self):
@@ -23,6 +23,7 @@ class Application:
         self.registry.register(RandomTool())
         self.prompt_builder = PromptBuilder()
         self.memory = ConversationManager()
+        self.agent = AgentService()
 
     def start(self):
         self.logger.info("Application Started")
@@ -46,6 +47,12 @@ class Application:
             try:
                 self.memory.add_user_message(prompt)
                 prompt_object = self.prompt_builder.build(prompt, self.memory.history())
+                plan = self.agent.create_execution_plan(prompt)
+                print("\nExecution Plan")
+                for step in plan.steps: 
+                    print(f"{step.id}. " f"{step.description}")
+                    print(f"   Status : {step.status.name}")
+                    print(f"   Result : {step.result}")
                 response = self.llm.generate(prompt_object)
                 self.memory.add_assistant_message(response)
                 print("\nAssistant:")

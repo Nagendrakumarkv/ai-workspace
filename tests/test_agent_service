@@ -1,0 +1,14 @@
+from agent.service import AgentService
+
+
+def test_agent_service():
+
+    agent = AgentService()
+
+    plan = agent.create_execution_plan(
+        "Calculate GST"
+    )
+
+    assert plan.goal == "Calculate GST"
+
+    assert plan.total_steps() == 4
